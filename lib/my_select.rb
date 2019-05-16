@@ -8,7 +8,8 @@ def my_select(arr)
       #ex. nums = [1,2,3]
       #my_select(nums) {|num| num > 2}
       
-      #nums[0] = 1 ==>
+      #nums[0] = 1 ==> 1 is not greater than 3 ==> false 
+      #(p yield[1,2,3][0]) p's false to console 
       if yield(arr[i]) == true
         new_arr << arr[i]
       end
